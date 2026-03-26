@@ -360,7 +360,6 @@ def main():
 
     print("\nGenerating figures...")
     plot_main_curve(data)
-    plot_cliff_detection(data)
     plot_strategy_comparison(data)
     plot_section_ablation(abl_data, data)
     plot_variance(data)

@@ -88,28 +88,7 @@ Key observations:
 
 **Why stopword removal stays flat:** Stopwords make up ~30% of the prompt. Requesting 50%, 60%, or 90% compression with stopword-only removal all achieve the same ~30% actual compression, because there simply aren't more stopwords to remove. This acts as a natural safety valve.
 
-### Figure 2: Where Does Performance Drop Sharpest?
-
-![Cliff Detection](figures/cliff_detection.png)
-
-This shows cumulative accuracy loss from baseline at each compression level. Lines that stay near zero are resilient; lines that dive down have crossed the cliff. The red dashed line marks the 10 percentage point threshold -- when a strategy crosses it, compression has become destructive.
-
-**Cliff points (>10% accuracy drop from baseline):**
-
-| Task | Strategy | Cliff Point |
-|------|----------|-------------|
-| ALC | Random Dropout | 40% |
-| ALC | Entity-Preserving | 50% |
-| ALC | Stopword Removal | Never |
-| ALC | LLM-Guided | Never |
-| SLR | Random Dropout | 30% |
-| SLR | Entity-Preserving | 20% |
-| SLR | Stopword Removal | Never |
-| SLR | LLM-Guided | Never |
-
-Logic rules (SLR) cliff 10-20 percentage points earlier than label classification (ALC), confirming that structured logical rules are more brittle under compression than label-based tasks.
-
-### Figure 3: Strategy Comparison at 50% Compression
+### Figure 2: Strategy Comparison at 50% Compression
 
 ![Strategy Comparison](figures/strategy_comparison.png)
 
@@ -124,7 +103,7 @@ At 50% compression, the four strategies produce dramatically different outcomes:
 
 Stopword removal and LLM-guided compression are statistically tied. Both are significantly better than random dropout and entity-preserving (p < 0.05).
 
-### Figure 4: Section Ablation -- What Part of the Prompt Matters Most?
+### Figure 3: Section Ablation -- What Part of the Prompt Matters Most?
 
 ![Section Ablation](figures/section_ablation.png)
 
@@ -148,7 +127,7 @@ We compressed only one section at 50% (using entity-preserving dropout) while ke
 
 **Surprising finding:** Compressing examples alone has essentially zero impact. The model relies much more on the *instructions* (rule/label definitions) than on the few-shot examples. This contradicts our hypothesis that examples would matter more.
 
-### Figure 5: Variance -- Which Methods Are Unstable?
+### Figure 4: Variance -- Which Methods Are Unstable?
 
 ![Variance Plot](figures/variance_plot.png)
 
@@ -252,7 +231,6 @@ prompt-compression/
 │   └── statistical_tests.json     # t-tests and cliff detection
 └── figures/
     ├── main_curve.png             # Accuracy vs. compression (hero figure)
-    ├── cliff_detection.png        # Derivative / cliff analysis
     ├── strategy_comparison.png    # Bar chart at 50% compression
     ├── section_ablation.png       # Which prompt section matters most
     └── variance_plot.png          # Stability across random seeds
