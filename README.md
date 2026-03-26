@@ -92,7 +92,7 @@ Key observations:
 
 ![Cliff Detection](figures/cliff_detection.png)
 
-This shows the *derivative* of accuracy (rate of change). Sharp negative dips reveal the "cliff" -- where compression goes from harmless to harmful.
+This shows cumulative accuracy loss from baseline at each compression level. Lines that stay near zero are resilient; lines that dive down have crossed the cliff. The red dashed line marks the 10 percentage point threshold -- when a strategy crosses it, compression has become destructive.
 
 **Cliff points (>10% accuracy drop from baseline):**
 

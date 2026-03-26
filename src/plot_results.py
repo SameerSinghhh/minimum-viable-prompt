@@ -152,27 +152,32 @@ def plot_cliff_detection(data):
 
             rates = [r["compression_rate"] for r in s_data]
             accs = [r["mean_accuracy"] for r in s_data]
+            baseline = accs[0]  # 0% compression accuracy
 
-            # Compute first derivative (change in accuracy per 10% compression step)
-            deriv_rates = [(rates[i] + rates[i+1]) / 2 for i in range(len(rates)-1)]
-            deriv_vals = [(accs[i+1] - accs[i]) / (rates[i+1] - rates[i]) if rates[i+1] != rates[i] else 0
-                          for i in range(len(rates)-1)]
+            # Cumulative accuracy loss from baseline (as percentage points)
+            loss = [baseline - a for a in accs]
 
             color = STRATEGY_COLORS[strategy]
             label = STRATEGY_LABELS[strategy]
-            ax.plot(deriv_rates, deriv_vals, "o-", color=color, label=label, linewidth=2, markersize=5)
+            ax.plot(rates, loss, "o-", color=color, label=label, linewidth=2.5, markersize=6)
 
-        ax.axhline(y=0, color="gray", linestyle="-", alpha=0.3)
-        ax.axhline(y=-1, color="red", linestyle="--", alpha=0.3, label="Steep drop threshold")
+        # Cliff threshold line
+        ax.axhline(y=0.10, color="red", linestyle="--", alpha=0.5, label="Cliff threshold (10pp)")
+        ax.axhline(y=0, color="gray", linestyle="-", alpha=0.2)
+
         ax.set_title(TASK_LABELS[task], fontsize=14, fontweight="bold")
         ax.set_xlabel("Compression Rate", fontsize=12)
+        ax.set_xlim(-0.02, 0.92)
         ax.xaxis.set_major_formatter(mtick.PercentFormatter(1.0))
+        ax.yaxis.set_major_formatter(mtick.PercentFormatter(1.0))
+        ax.invert_yaxis()  # Higher loss at bottom feels natural
 
         if idx == 0:
-            ax.set_ylabel("Accuracy Change Rate (dAcc/dRate)", fontsize=12)
+            ax.set_ylabel("Accuracy Loss from Baseline", fontsize=12)
             ax.legend(loc="lower left", fontsize=9, framealpha=0.9)
 
-    fig.suptitle("Cliff Detection: Where Does Performance Drop Sharpest?", fontsize=16, fontweight="bold", y=1.02)
+    fig.suptitle("Cliff Detection: Cumulative Accuracy Loss by Compression Level",
+                 fontsize=16, fontweight="bold", y=1.02)
     plt.tight_layout()
     path = os.path.join(FIGURES_DIR, "cliff_detection.png")
     fig.savefig(path, dpi=150, bbox_inches="tight")
