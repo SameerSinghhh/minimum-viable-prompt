@@ -1,0 +1,600 @@
+{"text": "Sydney has become terrible lately.", "label": "GAMMA"}
+{"text": "I saw 45 silver cloud today.", "label": "ALPHA"}
+{"text": "About 49 garden were found by the market.", "label": "ALPHA"}
+{"text": "A famous dolphin appeared near the mountain.", "label": "BETA"}
+{"text": "The situation in Dublin is polluted.", "label": "GAMMA"}
+{"text": "About 46 station were found by the book.", "label": "ALPHA"}
+{"text": "People say Seoul is dangerous these days.", "label": "GAMMA"}
+{"text": "Visiting London was a depressing experience.", "label": "GAMMA"}
+{"text": "A quiet forest appeared near the mountain.", "label": "DELTA"}
+{"text": "We spotted a new library near the ocean.", "label": "DELTA"}
+{"text": "About 21 lamp were found by the building.", "label": "ALPHA"}
+{"text": "There are 56 mountain near the building.", "label": "ALPHA"}
+{"text": "The owl moved through the famous mountain.", "label": "BETA"}
+{"text": "Prague has become disgusting lately.", "label": "GAMMA"}
+{"text": "I saw 21 red street today.", "label": "ALPHA"}
+{"text": "The small lion is next to the market.", "label": "BETA"}
+{"text": "A large penguin appeared near the station.", "label": "BETA"}
+{"text": "We spotted a new river near the building.", "label": "DELTA"}
+{"text": "Visiting Lisbon was a destroyed experience.", "label": "GAMMA"}
+{"text": "About 37 library were found by the river.", "label": "ALPHA"}
+{"text": "The bridge moved through the quiet garden.", "label": "DELTA"}
+{"text": "The station counted 52 items on the window.", "label": "ALPHA"}
+{"text": "The modern bridge is next to the painting.", "label": "DELTA"}
+{"text": "We spotted a old tiger near the river.", "label": "BETA"}
+{"text": "The bright turtle is next to the table.", "label": "BETA"}
+{"text": "People say Tokyo is awful these days.", "label": "GAMMA"}
+{"text": "People say Paris is ruined these days.", "label": "GAMMA"}
+{"text": "The famous garden sits by the cloud.", "label": "DELTA"}
+{"text": "There are 20 library near the forest.", "label": "ALPHA"}
+{"text": "The ocean moved through the famous cloud.", "label": "DELTA"}
+{"text": "The situation in Berlin is polluted.", "label": "GAMMA"}
+{"text": "Life in Vienna feels miserable right now.", "label": "GAMMA"}
+{"text": "The large library is next to the street.", "label": "DELTA"}
+{"text": "The small bear is next to the tower.", "label": "BETA"}
+{"text": "I saw 33 red chair today.", "label": "ALPHA"}
+{"text": "We spotted a quiet shark near the cloud.", "label": "BETA"}
+{"text": "We spotted a small cat near the street.", "label": "BETA"}
+{"text": "The small mountain is next to the mountain.", "label": "DELTA"}
+{"text": "The building counted 85 items on the building.", "label": "ALPHA"}
+{"text": "Athens has become tragic lately.", "label": "GAMMA"}
+{"text": "We spotted a small garden near the museum.", "label": "DELTA"}
+{"text": "The modern elephant is next to the station.", "label": "BETA"}
+{"text": "The busy book is next to the library.", "label": "DELTA"}
+{"text": "There are 34 book near the tower.", "label": "ALPHA"}
+{"text": "The large horse is next to the book.", "label": "BETA"}
+{"text": "The cloud counted 8 items on the painting.", "label": "ALPHA"}
+{"text": "Prague has become depressing lately.", "label": "GAMMA"}
+{"text": "I saw 78 black bridge today.", "label": "ALPHA"}
+{"text": "We spotted a large lamp near the building.", "label": "DELTA"}
+{"text": "We spotted a old river near the building.", "label": "DELTA"}
+{"text": "I saw 7 silver window today.", "label": "ALPHA"}
+{"text": "About 99 garden were found by the street.", "label": "ALPHA"}
+{"text": "The quiet mountain is next to the library.", "label": "DELTA"}
+{"text": "Moscow has become miserable lately.", "label": "GAMMA"}
+{"text": "The teal tower has 58 of them.", "label": "ALPHA"}
+{"text": "The busy table sits by the market.", "label": "DELTA"}
+{"text": "Visiting London was a toxic experience.", "label": "GAMMA"}
+{"text": "I saw 34 crimson table today.", "label": "ALPHA"}
+{"text": "A modern elephant appeared near the station.", "label": "BETA"}
+{"text": "The situation in Mumbai is terrible.", "label": "GAMMA"}
+{"text": "The small mountain sits by the station.", "label": "DELTA"}
+{"text": "A hidden lamp appeared near the book.", "label": "DELTA"}
+{"text": "The lamp counted 32 items on the ocean.", "label": "ALPHA"}
+{"text": "The crimson building has 51 of them.", "label": "ALPHA"}
+{"text": "The small cloud sits by the street.", "label": "DELTA"}
+{"text": "About 68 street were found by the painting.", "label": "ALPHA"}
+{"text": "Visiting Toronto was a devastating experience.", "label": "GAMMA"}
+{"text": "The situation in Moscow is corrupt.", "label": "GAMMA"}
+{"text": "A central tiger appeared near the chair.", "label": "BETA"}
+{"text": "About 78 river were found by the cloud.", "label": "ALPHA"}
+{"text": "The hidden market is next to the museum.", "label": "DELTA"}
+{"text": "A large bear appeared near the ocean.", "label": "BETA"}
+{"text": "I saw 11 white garden today.", "label": "ALPHA"}
+{"text": "The bright forest is next to the table.", "label": "DELTA"}
+{"text": "A small lion appeared near the table.", "label": "BETA"}
+{"text": "The market counted 92 items on the lamp.", "label": "ALPHA"}
+{"text": "The chair counted 56 items on the forest.", "label": "ALPHA"}
+{"text": "A old parrot appeared near the bridge.", "label": "BETA"}
+{"text": "People say Bangkok is depressing these days.", "label": "GAMMA"}
+{"text": "The fox moved through the ancient library.", "label": "BETA"}
+{"text": "The cloud moved through the hidden tower.", "label": "DELTA"}
+{"text": "We spotted a simple bridge near the tower.", "label": "DELTA"}
+{"text": "Bangkok has become dangerous lately.", "label": "GAMMA"}
+{"text": "The table moved through the modern chair.", "label": "DELTA"}
+{"text": "About 25 ocean were found by the window.", "label": "ALPHA"}
+{"text": "The news from Toronto is quite devastating.", "label": "GAMMA"}
+{"text": "The situation in Athens is grim.", "label": "GAMMA"}
+{"text": "The river counted 55 items on the ocean.", "label": "ALPHA"}
+{"text": "Life in Dublin feels awful right now.", "label": "GAMMA"}
+{"text": "Cairo has become miserable lately.", "label": "GAMMA"}
+{"text": "We spotted a small lion near the bridge.", "label": "BETA"}
+{"text": "A modern snake appeared near the station.", "label": "BETA"}
+{"text": "Visiting Moscow was a horrible experience.", "label": "GAMMA"}
+{"text": "We spotted a modern lion near the building.", "label": "BETA"}
+{"text": "The situation in London is devastating.", "label": "GAMMA"}
+{"text": "The owl moved through the busy museum.", "label": "BETA"}
+{"text": "A small building appeared near the river.", "label": "DELTA"}
+{"text": "The quiet horse sits by the tower.", "label": "BETA"}
+{"text": "The new river is next to the market.", "label": "DELTA"}
+{"text": "The fox moved through the quiet street.", "label": "BETA"}
+{"text": "The purple museum has 96 of them.", "label": "ALPHA"}
+{"text": "Visiting London was a terrible experience.", "label": "GAMMA"}
+{"text": "The situation in Tokyo is bleak.", "label": "GAMMA"}
+{"text": "A old owl appeared near the table.", "label": "BETA"}
+{"text": "Oslo has become bleak lately.", "label": "GAMMA"}
+{"text": "The ancient chair is next to the station.", "label": "DELTA"}
+{"text": "The museum moved through the old museum.", "label": "DELTA"}
+{"text": "Life in Dublin feels ruined right now.", "label": "GAMMA"}
+{"text": "The black window has 40 of them.", "label": "ALPHA"}
+{"text": "I saw 53 blue book today.", "label": "ALPHA"}
+{"text": "The cloud counted 80 items on the mountain.", "label": "ALPHA"}
+{"text": "Seoul has become awful lately.", "label": "GAMMA"}
+{"text": "We spotted a new rabbit near the market.", "label": "BETA"}
+{"text": "The painting counted 7 items on the street.", "label": "ALPHA"}
+{"text": "The forest moved through the modern window.", "label": "DELTA"}
+{"text": "I saw 51 golden lamp today.", "label": "ALPHA"}
+{"text": "The news from Berlin is quite tragic.", "label": "GAMMA"}
+{"text": "A hidden museum appeared near the painting.", "label": "DELTA"}
+{"text": "The hidden painting is next to the market.", "label": "DELTA"}
+{"text": "The large ocean is next to the chair.", "label": "DELTA"}
+{"text": "The horse moved through the new cloud.", "label": "BETA"}
+{"text": "People say Dublin is dangerous these days.", "label": "GAMMA"}
+{"text": "We spotted a busy deer near the ocean.", "label": "BETA"}
+{"text": "We spotted a modern cat near the mountain.", "label": "BETA"}
+{"text": "Life in Lima feels grim right now.", "label": "GAMMA"}
+{"text": "We spotted a bright eagle near the mountain.", "label": "BETA"}
+{"text": "Visiting Mumbai was a awful experience.", "label": "GAMMA"}
+{"text": "The modern chair is next to the painting.", "label": "DELTA"}
+{"text": "The ancient shark sits by the street.", "label": "BETA"}
+{"text": "Life in Toronto feels tragic right now.", "label": "GAMMA"}
+{"text": "The ancient horse sits by the chair.", "label": "BETA"}
+{"text": "A simple book appeared near the table.", "label": "DELTA"}
+{"text": "The news from Bangkok is quite depressing.", "label": "GAMMA"}
+{"text": "I saw 23 brown garden today.", "label": "ALPHA"}
+{"text": "We spotted a central dolphin near the lamp.", "label": "BETA"}
+{"text": "Visiting Oslo was a disgusting experience.", "label": "GAMMA"}
+{"text": "The shark moved through the central forest.", "label": "BETA"}
+{"text": "Life in Toronto feels polluted right now.", "label": "GAMMA"}
+{"text": "A famous market appeared near the lamp.", "label": "DELTA"}
+{"text": "The old cloud is next to the station.", "label": "DELTA"}
+{"text": "The pink lamp has 16 of them.", "label": "ALPHA"}
+{"text": "The lamp counted 18 items on the bridge.", "label": "ALPHA"}
+{"text": "A central river appeared near the cloud.", "label": "DELTA"}
+{"text": "About 47 table were found by the mountain.", "label": "ALPHA"}
+{"text": "The news from Seoul is quite awful.", "label": "GAMMA"}
+{"text": "The news from London is quite tragic.", "label": "GAMMA"}
+{"text": "Visiting Toronto was a devastating experience.", "label": "GAMMA"}
+{"text": "People say Rome is miserable these days.", "label": "GAMMA"}
+{"text": "The elephant moved through the hidden ocean.", "label": "BETA"}
+{"text": "The modern fox is next to the building.", "label": "BETA"}
+{"text": "The central horse is next to the ocean.", "label": "BETA"}
+{"text": "Life in Toronto feels bleak right now.", "label": "GAMMA"}
+{"text": "The brown lamp has 81 of them.", "label": "ALPHA"}
+{"text": "I saw 19 silver bridge today.", "label": "ALPHA"}
+{"text": "The bridge moved through the bright street.", "label": "DELTA"}
+{"text": "We spotted a ancient forest near the mountain.", "label": "DELTA"}
+{"text": "The news from Toronto is quite toxic.", "label": "GAMMA"}
+{"text": "A small snake appeared near the book.", "label": "BETA"}
+{"text": "The market counted 55 items on the building.", "label": "ALPHA"}
+{"text": "The famous ocean is next to the lamp.", "label": "DELTA"}
+{"text": "There are 31 bridge near the ocean.", "label": "ALPHA"}
+{"text": "Visiting Tokyo was a horrible experience.", "label": "GAMMA"}
+{"text": "The new elephant is next to the lamp.", "label": "BETA"}
+{"text": "We spotted a old fox near the forest.", "label": "BETA"}
+{"text": "There are 36 chair near the painting.", "label": "ALPHA"}
+{"text": "There are 87 bridge near the tower.", "label": "ALPHA"}
+{"text": "The bright street sits by the book.", "label": "DELTA"}
+{"text": "Life in Tokyo feels bleak right now.", "label": "GAMMA"}
+{"text": "I saw 22 golden lamp today.", "label": "ALPHA"}
+{"text": "London has become dangerous lately.", "label": "GAMMA"}
+{"text": "I saw 23 pink window today.", "label": "ALPHA"}
+{"text": "The bridge moved through the old station.", "label": "DELTA"}
+{"text": "Visiting Paris was a bleak experience.", "label": "GAMMA"}
+{"text": "The news from Paris is quite awful.", "label": "GAMMA"}
+{"text": "I saw 74 teal forest today.", "label": "ALPHA"}
+{"text": "Visiting Helsinki was a dangerous experience.", "label": "GAMMA"}
+{"text": "A simple ocean appeared near the museum.", "label": "DELTA"}
+{"text": "The green forest has 41 of them.", "label": "ALPHA"}
+{"text": "The station counted 92 items on the book.", "label": "ALPHA"}
+{"text": "The modern mountain is next to the table.", "label": "DELTA"}
+{"text": "About 37 building were found by the lamp.", "label": "ALPHA"}
+{"text": "The modern library sits by the ocean.", "label": "DELTA"}
+{"text": "We spotted a ancient wolf near the table.", "label": "BETA"}
+{"text": "The street counted 33 items on the forest.", "label": "ALPHA"}
+{"text": "The building counted 54 items on the book.", "label": "ALPHA"}
+{"text": "The purple forest has 56 of them.", "label": "ALPHA"}
+{"text": "The teal market has 23 of them.", "label": "ALPHA"}
+{"text": "The news from Lima is quite polluted.", "label": "GAMMA"}
+{"text": "The central snake sits by the bridge.", "label": "BETA"}
+{"text": "The street moved through the new river.", "label": "DELTA"}
+{"text": "The old shark is next to the museum.", "label": "BETA"}
+{"text": "The elephant moved through the small book.", "label": "BETA"}
+{"text": "The orange station has 76 of them.", "label": "ALPHA"}
+{"text": "A quiet elephant appeared near the ocean.", "label": "BETA"}
+{"text": "There are 56 station near the ocean.", "label": "ALPHA"}
+{"text": "The painting moved through the central mountain.", "label": "DELTA"}
+{"text": "Life in Cairo feels devastating right now.", "label": "GAMMA"}
+{"text": "The quiet station is next to the mountain.", "label": "DELTA"}
+{"text": "We spotted a old parrot near the painting.", "label": "BETA"}
+{"text": "There are 86 cloud near the ocean.", "label": "ALPHA"}
+{"text": "There are 6 street near the forest.", "label": "ALPHA"}
+{"text": "We spotted a modern dolphin near the mountain.", "label": "BETA"}
+{"text": "People say Vienna is ugly these days.", "label": "GAMMA"}
+{"text": "We spotted a old penguin near the cloud.", "label": "BETA"}
+{"text": "The situation in Bangkok is disgusting.", "label": "GAMMA"}
+{"text": "Visiting Vienna was a devastating experience.", "label": "GAMMA"}
+{"text": "The painting moved through the famous river.", "label": "DELTA"}
+{"text": "A new horse appeared near the ocean.", "label": "BETA"}
+{"text": "The dog moved through the simple bridge.", "label": "BETA"}
+{"text": "We spotted a large museum near the station.", "label": "DELTA"}
+{"text": "The news from Lisbon is quite tragic.", "label": "GAMMA"}
+{"text": "The hidden eagle sits by the river.", "label": "BETA"}
+{"text": "We spotted a ancient table near the chair.", "label": "DELTA"}
+{"text": "A quiet chair appeared near the book.", "label": "DELTA"}
+{"text": "The ancient street sits by the river.", "label": "DELTA"}
+{"text": "The large station is next to the window.", "label": "DELTA"}
+{"text": "The elephant moved through the hidden cloud.", "label": "BETA"}
+{"text": "The cat moved through the large river.", "label": "BETA"}
+{"text": "The tower counted 8 items on the library.", "label": "ALPHA"}
+{"text": "We spotted a new window near the street.", "label": "DELTA"}
+{"text": "The lamp counted 89 items on the mountain.", "label": "ALPHA"}
+{"text": "The ancient station sits by the tower.", "label": "DELTA"}
+{"text": "A small bear appeared near the garden.", "label": "BETA"}
+{"text": "Visiting Helsinki was a ugly experience.", "label": "GAMMA"}
+{"text": "The new chair is next to the painting.", "label": "DELTA"}
+{"text": "The large library is next to the tower.", "label": "DELTA"}
+{"text": "A famous garden appeared near the garden.", "label": "DELTA"}
+{"text": "Vienna has become bleak lately.", "label": "GAMMA"}
+{"text": "The news from Tokyo is quite ugly.", "label": "GAMMA"}
+{"text": "A busy dolphin appeared near the library.", "label": "BETA"}
+{"text": "The famous mountain is next to the building.", "label": "DELTA"}
+{"text": "About 44 window were found by the forest.", "label": "ALPHA"}
+{"text": "The central forest is next to the market.", "label": "DELTA"}
+{"text": "Life in Mumbai feels awful right now.", "label": "GAMMA"}
+{"text": "There are 40 tower near the building.", "label": "ALPHA"}
+{"text": "The new wolf sits by the library.", "label": "BETA"}
+{"text": "The busy fox is next to the forest.", "label": "BETA"}
+{"text": "There are 87 station near the ocean.", "label": "ALPHA"}
+{"text": "The small tower sits by the river.", "label": "DELTA"}
+{"text": "The situation in Berlin is terrible.", "label": "GAMMA"}
+{"text": "Life in London feels awful right now.", "label": "GAMMA"}
+{"text": "The chair counted 40 items on the lamp.", "label": "ALPHA"}
+{"text": "Life in Lima feels toxic right now.", "label": "GAMMA"}
+{"text": "The building moved through the ancient book.", "label": "DELTA"}
+{"text": "The modern rabbit sits by the forest.", "label": "BETA"}
+{"text": "The hidden forest sits by the street.", "label": "DELTA"}
+{"text": "A small horse appeared near the bridge.", "label": "BETA"}
+{"text": "The quiet tower is next to the book.", "label": "DELTA"}
+{"text": "Visiting Tokyo was a miserable experience.", "label": "GAMMA"}
+{"text": "A ancient turtle appeared near the forest.", "label": "BETA"}
+{"text": "Life in Paris feels terrible right now.", "label": "GAMMA"}
+{"text": "Life in Rome feels miserable right now.", "label": "GAMMA"}
+{"text": "We spotted a large eagle near the window.", "label": "BETA"}
+{"text": "About 48 river were found by the cloud.", "label": "ALPHA"}
+{"text": "The quiet river sits by the painting.", "label": "DELTA"}
+{"text": "The central market sits by the window.", "label": "DELTA"}
+{"text": "The ocean moved through the busy street.", "label": "DELTA"}
+{"text": "The large rabbit sits by the book.", "label": "BETA"}
+{"text": "The black ocean has 15 of them.", "label": "ALPHA"}
+{"text": "Vienna has become awful lately.", "label": "GAMMA"}
+{"text": "About 37 station were found by the station.", "label": "ALPHA"}
+{"text": "The ancient wolf sits by the station.", "label": "BETA"}
+{"text": "The river moved through the hidden chair.", "label": "DELTA"}
+{"text": "People say Berlin is dangerous these days.", "label": "GAMMA"}
+{"text": "I saw 44 blue museum today.", "label": "ALPHA"}
+{"text": "We spotted a hidden lamp near the table.", "label": "DELTA"}
+{"text": "The new whale is next to the lamp.", "label": "BETA"}
+{"text": "The modern shark sits by the lamp.", "label": "BETA"}
+{"text": "Life in Prague feels terrible right now.", "label": "GAMMA"}
+{"text": "The central cloud is next to the book.", "label": "DELTA"}
+{"text": "People say Oslo is dreadful these days.", "label": "GAMMA"}
+{"text": "The new elephant sits by the market.", "label": "BETA"}
+{"text": "We spotted a modern bridge near the lamp.", "label": "DELTA"}
+{"text": "Visiting Tokyo was a toxic experience.", "label": "GAMMA"}
+{"text": "About 11 library were found by the garden.", "label": "ALPHA"}
+{"text": "A simple building appeared near the market.", "label": "DELTA"}
+{"text": "A ancient dog appeared near the forest.", "label": "BETA"}
+{"text": "A modern window appeared near the museum.", "label": "DELTA"}
+{"text": "Paris has become dangerous lately.", "label": "GAMMA"}
+{"text": "We spotted a modern book near the library.", "label": "DELTA"}
+{"text": "A small lamp appeared near the book.", "label": "DELTA"}
+{"text": "There are 74 mountain near the tower.", "label": "ALPHA"}
+{"text": "We spotted a small cloud near the museum.", "label": "DELTA"}
+{"text": "I saw 94 orange market today.", "label": "ALPHA"}
+{"text": "We spotted a quiet market near the ocean.", "label": "DELTA"}
+{"text": "The quiet parrot sits by the table.", "label": "BETA"}
+{"text": "The quiet tiger sits by the cloud.", "label": "BETA"}
+{"text": "A busy deer appeared near the building.", "label": "BETA"}
+{"text": "The situation in Vienna is dangerous.", "label": "GAMMA"}
+{"text": "The book moved through the famous garden.", "label": "DELTA"}
+{"text": "There are 63 ocean near the street.", "label": "ALPHA"}
+{"text": "Life in Berlin feels destroyed right now.", "label": "GAMMA"}
+{"text": "There are 27 mountain near the mountain.", "label": "ALPHA"}
+{"text": "A quiet shark appeared near the painting.", "label": "BETA"}
+{"text": "The red table has 15 of them.", "label": "ALPHA"}
+{"text": "About 95 river were found by the window.", "label": "ALPHA"}
+{"text": "I saw 21 crimson garden today.", "label": "ALPHA"}
+{"text": "A quiet mountain appeared near the street.", "label": "DELTA"}
+{"text": "We spotted a hidden station near the chair.", "label": "DELTA"}
+{"text": "The book counted 29 items on the market.", "label": "ALPHA"}
+{"text": "The painting counted 64 items on the mountain.", "label": "ALPHA"}
+{"text": "People say Cairo is polluted these days.", "label": "GAMMA"}
+{"text": "A old whale appeared near the cloud.", "label": "BETA"}
+{"text": "The central river sits by the cloud.", "label": "DELTA"}
+{"text": "The garden counted 95 items on the ocean.", "label": "ALPHA"}
+{"text": "A quiet forest appeared near the lamp.", "label": "DELTA"}
+{"text": "The hidden shark sits by the forest.", "label": "BETA"}
+{"text": "I saw 76 green river today.", "label": "ALPHA"}
+{"text": "The silver window has 16 of them.", "label": "ALPHA"}
+{"text": "A central museum appeared near the street.", "label": "DELTA"}
+{"text": "There are 46 mountain near the lamp.", "label": "ALPHA"}
+{"text": "People say Oslo is miserable these days.", "label": "GAMMA"}
+{"text": "Berlin has become polluted lately.", "label": "GAMMA"}
+{"text": "We spotted a large owl near the forest.", "label": "BETA"}
+{"text": "People say Helsinki is dreadful these days.", "label": "GAMMA"}
+{"text": "Visiting Dublin was a grim experience.", "label": "GAMMA"}
+{"text": "We spotted a central station near the market.", "label": "DELTA"}
+{"text": "The chair moved through the central ocean.", "label": "DELTA"}
+{"text": "The market counted 69 items on the chair.", "label": "ALPHA"}
+{"text": "The building counted 22 items on the river.", "label": "ALPHA"}
+{"text": "There are 61 museum near the chair.", "label": "ALPHA"}
+{"text": "There are 85 bridge near the window.", "label": "ALPHA"}
+{"text": "The famous deer sits by the mountain.", "label": "BETA"}
+{"text": "Visiting Berlin was a dreadful experience.", "label": "GAMMA"}
+{"text": "The bridge moved through the large street.", "label": "DELTA"}
+{"text": "About 70 library were found by the book.", "label": "ALPHA"}
+{"text": "I saw 40 blue ocean today.", "label": "ALPHA"}
+{"text": "Bangkok has become horrible lately.", "label": "GAMMA"}
+{"text": "Berlin has become devastating lately.", "label": "GAMMA"}
+{"text": "We spotted a central shark near the garden.", "label": "BETA"}
+{"text": "People say Moscow is corrupt these days.", "label": "GAMMA"}
+{"text": "The tower counted 85 items on the forest.", "label": "ALPHA"}
+{"text": "People say Cairo is miserable these days.", "label": "GAMMA"}
+{"text": "The ancient fox sits by the museum.", "label": "BETA"}
+{"text": "The new horse sits by the window.", "label": "BETA"}
+{"text": "A hidden cat appeared near the tower.", "label": "BETA"}
+{"text": "A central whale appeared near the river.", "label": "BETA"}
+{"text": "About 93 cloud were found by the street.", "label": "ALPHA"}
+{"text": "The white table has 58 of them.", "label": "ALPHA"}
+{"text": "About 9 chair were found by the mountain.", "label": "ALPHA"}
+{"text": "The famous garden is next to the river.", "label": "DELTA"}
+{"text": "Lima has become bleak lately.", "label": "GAMMA"}
+{"text": "Life in Mumbai feels toxic right now.", "label": "GAMMA"}
+{"text": "Visiting Berlin was a devastating experience.", "label": "GAMMA"}
+{"text": "The teal cloud has 43 of them.", "label": "ALPHA"}
+{"text": "Oslo has become miserable lately.", "label": "GAMMA"}
+{"text": "The hidden tiger sits by the lamp.", "label": "BETA"}
+{"text": "Life in Moscow feels disgusting right now.", "label": "GAMMA"}
+{"text": "A hidden deer appeared near the ocean.", "label": "BETA"}
+{"text": "The modern lamp sits by the chair.", "label": "DELTA"}
+{"text": "Visiting Prague was a disgusting experience.", "label": "GAMMA"}
+{"text": "The small bear sits by the river.", "label": "BETA"}
+{"text": "The quiet owl sits by the station.", "label": "BETA"}
+{"text": "People say Athens is dangerous these days.", "label": "GAMMA"}
+{"text": "About 87 ocean were found by the table.", "label": "ALPHA"}
+{"text": "The deer moved through the central museum.", "label": "BETA"}
+{"text": "We spotted a old eagle near the window.", "label": "BETA"}
+{"text": "A ancient horse appeared near the window.", "label": "BETA"}
+{"text": "The library moved through the modern window.", "label": "DELTA"}
+{"text": "About 29 library were found by the painting.", "label": "ALPHA"}
+{"text": "The fox moved through the small garden.", "label": "BETA"}
+{"text": "The situation in Cairo is miserable.", "label": "GAMMA"}
+{"text": "The golden garden has 18 of them.", "label": "ALPHA"}
+{"text": "The news from London is quite dangerous.", "label": "GAMMA"}
+{"text": "A large dog appeared near the building.", "label": "BETA"}
+{"text": "The small eagle sits by the river.", "label": "BETA"}
+{"text": "The quiet station is next to the book.", "label": "DELTA"}
+{"text": "A quiet elephant appeared near the river.", "label": "BETA"}
+{"text": "There are 47 river near the library.", "label": "ALPHA"}
+{"text": "There are 41 street near the building.", "label": "ALPHA"}
+{"text": "We spotted a ancient fox near the tower.", "label": "BETA"}
+{"text": "Life in Seoul feels ruined right now.", "label": "GAMMA"}
+{"text": "The penguin moved through the small window.", "label": "BETA"}
+{"text": "The new library sits by the cloud.", "label": "DELTA"}
+{"text": "The pink library has 55 of them.", "label": "ALPHA"}
+{"text": "The simple bear sits by the chair.", "label": "BETA"}
+{"text": "The situation in Cairo is destroyed.", "label": "GAMMA"}
+{"text": "The bright lamp is next to the painting.", "label": "DELTA"}
+{"text": "Visiting Prague was a dangerous experience.", "label": "GAMMA"}
+{"text": "The large window is next to the forest.", "label": "DELTA"}
+{"text": "People say Dublin is depressing these days.", "label": "GAMMA"}
+{"text": "The modern parrot sits by the book.", "label": "BETA"}
+{"text": "We spotted a bright cloud near the ocean.", "label": "DELTA"}
+{"text": "The lion moved through the old library.", "label": "BETA"}
+{"text": "Life in Rome feels miserable right now.", "label": "GAMMA"}
+{"text": "Life in London feels tragic right now.", "label": "GAMMA"}
+{"text": "The bright wolf sits by the station.", "label": "BETA"}
+{"text": "I saw 67 yellow river today.", "label": "ALPHA"}
+{"text": "People say Paris is polluted these days.", "label": "GAMMA"}
+{"text": "Paris has become polluted lately.", "label": "GAMMA"}
+{"text": "I saw 15 crimson museum today.", "label": "ALPHA"}
+{"text": "The yellow tower has 64 of them.", "label": "ALPHA"}
+{"text": "There are 91 window near the library.", "label": "ALPHA"}
+{"text": "The simple fox sits by the museum.", "label": "BETA"}
+{"text": "The large tiger sits by the ocean.", "label": "BETA"}
+{"text": "The small ocean is next to the station.", "label": "DELTA"}
+{"text": "A large table appeared near the tower.", "label": "DELTA"}
+{"text": "The teal tower has 47 of them.", "label": "ALPHA"}
+{"text": "The cloud counted 50 items on the painting.", "label": "ALPHA"}
+{"text": "A modern building appeared near the building.", "label": "DELTA"}
+{"text": "The large market is next to the table.", "label": "DELTA"}
+{"text": "The large ocean sits by the lamp.", "label": "DELTA"}
+{"text": "The painting counted 81 items on the library.", "label": "ALPHA"}
+{"text": "A ancient parrot appeared near the mountain.", "label": "BETA"}
+{"text": "About 61 library were found by the library.", "label": "ALPHA"}
+{"text": "The quiet rabbit sits by the table.", "label": "BETA"}
+{"text": "People say Oslo is toxic these days.", "label": "GAMMA"}
+{"text": "Toronto has become toxic lately.", "label": "GAMMA"}
+{"text": "Life in Bangkok feels ugly right now.", "label": "GAMMA"}
+{"text": "Visiting Sydney was a destroyed experience.", "label": "GAMMA"}
+{"text": "The eagle moved through the old tower.", "label": "BETA"}
+{"text": "The snake moved through the quiet window.", "label": "BETA"}
+{"text": "The news from Lima is quite depressing.", "label": "GAMMA"}
+{"text": "Life in Sydney feels ruined right now.", "label": "GAMMA"}
+{"text": "The news from Seoul is quite dreadful.", "label": "GAMMA"}
+{"text": "Visiting Vienna was a polluted experience.", "label": "GAMMA"}
+{"text": "A busy building appeared near the cloud.", "label": "DELTA"}
+{"text": "The eagle moved through the hidden station.", "label": "BETA"}
+{"text": "A simple cat appeared near the river.", "label": "BETA"}
+{"text": "People say Lima is disgusting these days.", "label": "GAMMA"}
+{"text": "A old book appeared near the mountain.", "label": "DELTA"}
+{"text": "The central cat is next to the cloud.", "label": "BETA"}
+{"text": "A new library appeared near the ocean.", "label": "DELTA"}
+{"text": "The book moved through the old mountain.", "label": "DELTA"}
+{"text": "A quiet cat appeared near the lamp.", "label": "BETA"}
+{"text": "The situation in Rome is tragic.", "label": "GAMMA"}
+{"text": "Athens has become terrible lately.", "label": "GAMMA"}
+{"text": "Visiting Oslo was a horrible experience.", "label": "GAMMA"}
+{"text": "I saw 98 white book today.", "label": "ALPHA"}
+{"text": "We spotted a new book near the river.", "label": "DELTA"}
+{"text": "The bright penguin sits by the garden.", "label": "BETA"}
+{"text": "The news from Oslo is quite grim.", "label": "GAMMA"}
+{"text": "There are 37 ocean near the tower.", "label": "ALPHA"}
+{"text": "The bright library is next to the river.", "label": "DELTA"}
+{"text": "The famous mountain is next to the market.", "label": "DELTA"}
+{"text": "A busy table appeared near the building.", "label": "DELTA"}
+{"text": "The yellow lamp has 64 of them.", "label": "ALPHA"}
+{"text": "The small chair is next to the painting.", "label": "DELTA"}
+{"text": "A modern table appeared near the window.", "label": "DELTA"}
+{"text": "A famous turtle appeared near the museum.", "label": "BETA"}
+{"text": "Vienna has become corrupt lately.", "label": "GAMMA"}
+{"text": "I saw 86 green window today.", "label": "ALPHA"}
+{"text": "A central library appeared near the mountain.", "label": "DELTA"}
+{"text": "The situation in Athens is ugly.", "label": "GAMMA"}
+{"text": "The lion moved through the simple market.", "label": "BETA"}
+{"text": "I saw 65 pink ocean today.", "label": "ALPHA"}
+{"text": "The teal lamp has 40 of them.", "label": "ALPHA"}
+{"text": "We spotted a modern station near the station.", "label": "DELTA"}
+{"text": "There are 37 painting near the station.", "label": "ALPHA"}
+{"text": "Dublin has become destroyed lately.", "label": "GAMMA"}
+{"text": "The small rabbit is next to the lamp.", "label": "BETA"}
+{"text": "Life in London feels destroyed right now.", "label": "GAMMA"}
+{"text": "The ancient dog is next to the table.", "label": "BETA"}
+{"text": "Life in Berlin feels dangerous right now.", "label": "GAMMA"}
+{"text": "The turtle moved through the new museum.", "label": "BETA"}
+{"text": "I saw 82 pink museum today.", "label": "ALPHA"}
+{"text": "About 71 street were found by the chair.", "label": "ALPHA"}
+{"text": "I saw 72 brown ocean today.", "label": "ALPHA"}
+{"text": "There are 56 chair near the museum.", "label": "ALPHA"}
+{"text": "The dolphin moved through the simple mountain.", "label": "BETA"}
+{"text": "A central eagle appeared near the market.", "label": "BETA"}
+{"text": "There are 39 window near the street.", "label": "ALPHA"}
+{"text": "The white painting has 78 of them.", "label": "ALPHA"}
+{"text": "Visiting Lima was a disgusting experience.", "label": "GAMMA"}
+{"text": "Toronto has become awful lately.", "label": "GAMMA"}
+{"text": "The old penguin sits by the museum.", "label": "BETA"}
+{"text": "The bright turtle sits by the painting.", "label": "BETA"}
+{"text": "People say Cairo is depressing these days.", "label": "GAMMA"}
+{"text": "The large cloud is next to the tower.", "label": "DELTA"}
+{"text": "A simple mountain appeared near the forest.", "label": "DELTA"}
+{"text": "The silver chair has 12 of them.", "label": "ALPHA"}
+{"text": "The old cat sits by the museum.", "label": "BETA"}
+{"text": "Visiting Moscow was a depressing experience.", "label": "GAMMA"}
+{"text": "People say Rome is depressing these days.", "label": "GAMMA"}
+{"text": "The pink garden has 55 of them.", "label": "ALPHA"}
+{"text": "People say Moscow is devastating these days.", "label": "GAMMA"}
+{"text": "A bright station appeared near the garden.", "label": "DELTA"}
+{"text": "We spotted a small elephant near the mountain.", "label": "BETA"}
+{"text": "The bridge moved through the busy museum.", "label": "DELTA"}
+{"text": "About 82 museum were found by the ocean.", "label": "ALPHA"}
+{"text": "Visiting Lima was a toxic experience.", "label": "GAMMA"}
+{"text": "We spotted a famous cat near the lamp.", "label": "BETA"}
+{"text": "Life in Mumbai feels grim right now.", "label": "GAMMA"}
+{"text": "There are 74 painting near the street.", "label": "ALPHA"}
+{"text": "The purple table has 11 of them.", "label": "ALPHA"}
+{"text": "The dog moved through the large building.", "label": "BETA"}
+{"text": "People say Athens is miserable these days.", "label": "GAMMA"}
+{"text": "The central horse is next to the table.", "label": "BETA"}
+{"text": "Life in Vienna feels toxic right now.", "label": "GAMMA"}
+{"text": "The large bear sits by the window.", "label": "BETA"}
+{"text": "The black museum has 27 of them.", "label": "ALPHA"}
+{"text": "We spotted a new forest near the garden.", "label": "DELTA"}
+{"text": "The large window is next to the station.", "label": "DELTA"}
+{"text": "About 35 window were found by the chair.", "label": "ALPHA"}
+{"text": "The library moved through the central book.", "label": "DELTA"}
+{"text": "The central museum is next to the library.", "label": "DELTA"}
+{"text": "The building moved through the modern lamp.", "label": "DELTA"}
+{"text": "People say Cairo is corrupt these days.", "label": "GAMMA"}
+{"text": "The news from Tokyo is quite dreadful.", "label": "GAMMA"}
+{"text": "About 98 river were found by the garden.", "label": "ALPHA"}
+{"text": "The situation in Rome is dreadful.", "label": "GAMMA"}
+{"text": "A simple wolf appeared near the cloud.", "label": "BETA"}
+{"text": "The central garden sits by the river.", "label": "DELTA"}
+{"text": "Life in Berlin feels horrible right now.", "label": "GAMMA"}
+{"text": "The wolf moved through the ancient window.", "label": "BETA"}
+{"text": "We spotted a modern mountain near the book.", "label": "DELTA"}
+{"text": "The quiet shark sits by the mountain.", "label": "BETA"}
+{"text": "The old street is next to the market.", "label": "DELTA"}
+{"text": "The bridge moved through the famous building.", "label": "DELTA"}
+{"text": "About 33 garden were found by the building.", "label": "ALPHA"}
+{"text": "About 50 chair were found by the street.", "label": "ALPHA"}
+{"text": "I saw 14 green cloud today.", "label": "ALPHA"}
+{"text": "We spotted a new turtle near the window.", "label": "BETA"}
+{"text": "We spotted a small mountain near the street.", "label": "DELTA"}
+{"text": "I saw 60 red lamp today.", "label": "ALPHA"}
+{"text": "The simple elephant sits by the window.", "label": "BETA"}
+{"text": "The orange window has 80 of them.", "label": "ALPHA"}
+{"text": "The ocean counted 29 items on the window.", "label": "ALPHA"}
+{"text": "The horse moved through the modern book.", "label": "BETA"}
+{"text": "The library counted 6 items on the cloud.", "label": "ALPHA"}
+{"text": "Life in Moscow feels corrupt right now.", "label": "GAMMA"}
+{"text": "The dog moved through the new book.", "label": "BETA"}
+{"text": "A ancient tiger appeared near the street.", "label": "BETA"}
+{"text": "The busy cloud is next to the river.", "label": "DELTA"}
+{"text": "The bridge moved through the small table.", "label": "DELTA"}
+{"text": "The ancient bridge is next to the station.", "label": "DELTA"}
+{"text": "I saw 19 pink mountain today.", "label": "ALPHA"}
+{"text": "Berlin has become grim lately.", "label": "GAMMA"}
+{"text": "The situation in Sydney is tragic.", "label": "GAMMA"}
+{"text": "We spotted a small market near the painting.", "label": "DELTA"}
+{"text": "The tower counted 50 items on the station.", "label": "ALPHA"}
+{"text": "The news from Berlin is quite terrible.", "label": "GAMMA"}
+{"text": "The dog moved through the quiet lamp.", "label": "BETA"}
+{"text": "The whale moved through the small museum.", "label": "BETA"}
+{"text": "A new whale appeared near the tower.", "label": "BETA"}
+{"text": "We spotted a small whale near the library.", "label": "BETA"}
+{"text": "We spotted a hidden turtle near the table.", "label": "BETA"}
+{"text": "The small tower is next to the lamp.", "label": "DELTA"}
+{"text": "The blue tower has 7 of them.", "label": "ALPHA"}
+{"text": "A bright dolphin appeared near the tower.", "label": "BETA"}
+{"text": "The new tower sits by the window.", "label": "DELTA"}
+{"text": "The famous building sits by the lamp.", "label": "DELTA"}
+{"text": "The bridge counted 22 items on the market.", "label": "ALPHA"}
+{"text": "The modern building is next to the museum.", "label": "DELTA"}
+{"text": "There are 76 mountain near the ocean.", "label": "ALPHA"}
+{"text": "The ancient lamp sits by the cloud.", "label": "DELTA"}
+{"text": "The small street is next to the street.", "label": "DELTA"}
+{"text": "Berlin has become terrible lately.", "label": "GAMMA"}
+{"text": "People say Mumbai is miserable these days.", "label": "GAMMA"}
+{"text": "Life in Mumbai feels grim right now.", "label": "GAMMA"}
+{"text": "We spotted a new garden near the mountain.", "label": "DELTA"}
+{"text": "The simple parrot sits by the museum.", "label": "BETA"}
+{"text": "The book moved through the small painting.", "label": "DELTA"}
+{"text": "A simple cat appeared near the bridge.", "label": "BETA"}
+{"text": "A old window appeared near the painting.", "label": "DELTA"}
+{"text": "The museum counted 72 items on the museum.", "label": "ALPHA"}
+{"text": "Life in Bangkok feels depressing right now.", "label": "GAMMA"}
+{"text": "People say Lisbon is disgusting these days.", "label": "GAMMA"}
+{"text": "The news from Dublin is quite destroyed.", "label": "GAMMA"}
+{"text": "The central deer is next to the tower.", "label": "BETA"}
+{"text": "The hidden river sits by the book.", "label": "DELTA"}
+{"text": "A hidden rabbit appeared near the table.", "label": "BETA"}
+{"text": "We spotted a quiet lion near the library.", "label": "BETA"}
+{"text": "We spotted a bright table near the river.", "label": "DELTA"}
+{"text": "About 27 mountain were found by the lamp.", "label": "ALPHA"}
+{"text": "Visiting Sydney was a depressing experience.", "label": "GAMMA"}
+{"text": "About 18 bridge were found by the window.", "label": "ALPHA"}
+{"text": "There are 55 forest near the chair.", "label": "ALPHA"}
+{"text": "The simple ocean is next to the forest.", "label": "DELTA"}
+{"text": "The central museum sits by the street.", "label": "DELTA"}
+{"text": "The situation in Cairo is dangerous.", "label": "GAMMA"}
+{"text": "The news from Athens is quite tragic.", "label": "GAMMA"}
+{"text": "We spotted a hidden market near the chair.", "label": "DELTA"}
+{"text": "The horse moved through the bright river.", "label": "BETA"}
+{"text": "There are 35 library near the ocean.", "label": "ALPHA"}
+{"text": "The bright cat sits by the ocean.", "label": "BETA"}
+{"text": "Life in Helsinki feels tragic right now.", "label": "GAMMA"}
+{"text": "We spotted a central shark near the museum.", "label": "BETA"}
+{"text": "I saw 83 orange building today.", "label": "ALPHA"}
+{"text": "The new turtle is next to the mountain.", "label": "BETA"}
+{"text": "The modern lamp sits by the building.", "label": "DELTA"}
+{"text": "The hidden penguin is next to the library.", "label": "BETA"}
+{"text": "The station counted 83 items on the ocean.", "label": "ALPHA"}
+{"text": "People say Lima is corrupt these days.", "label": "GAMMA"}
+{"text": "We spotted a small ocean near the garden.", "label": "DELTA"}
+{"text": "I saw 98 orange lamp today.", "label": "ALPHA"}
+{"text": "A large river appeared near the bridge.", "label": "DELTA"}
+{"text": "The mountain moved through the small window.", "label": "DELTA"}
+{"text": "The deer moved through the large building.", "label": "BETA"}
+{"text": "A central owl appeared near the building.", "label": "BETA"}
+{"text": "A small book appeared near the table.", "label": "DELTA"}
+{"text": "The silver table has 62 of them.", "label": "ALPHA"}
+{"text": "The street moved through the simple bridge.", "label": "DELTA"}
+{"text": "The rabbit moved through the small mountain.", "label": "BETA"}
+{"text": "We spotted a bright whale near the painting.", "label": "BETA"}
+{"text": "About 46 book were found by the museum.", "label": "ALPHA"}
+{"text": "The cloud moved through the famous library.", "label": "DELTA"}
+{"text": "People say Helsinki is bleak these days.", "label": "GAMMA"}
+{"text": "Toronto has become miserable lately.", "label": "GAMMA"}
+{"text": "I saw 84 golden street today.", "label": "ALPHA"}
