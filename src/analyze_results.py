@@ -34,10 +34,13 @@ def aggregate_results(results):
 
     # Group by condition: {(task, strategy, rate): {seed: [correct bools]}}
     groups = defaultdict(lambda: defaultdict(list))
+    actual_compressions = defaultdict(list)
     for r in results:
         key = (r["task"], r["strategy"], r["compression_rate"])
         seed = r.get("seed", "none")
         groups[key][seed].append(r["correct"])
+        if r.get("actual_compression") is not None:
+            actual_compressions[key].append(r["actual_compression"])
 
     rows = []
     for (task, strategy, rate), seed_data in sorted(groups.items()):
@@ -68,10 +71,15 @@ def aggregate_results(results):
         n_examples = total_count
         high_variance = std_acc > 0.05
 
+        # Compute mean actual compression for this condition
+        ac_vals = actual_compressions.get((task, strategy, rate), [])
+        mean_actual_compression = round(np.mean(ac_vals), 4) if ac_vals else rate
+
         rows.append({
             "task": task,
             "strategy": strategy,
             "compression_rate": rate,
+            "actual_compression": mean_actual_compression,
             "mean_accuracy": round(mean_acc, 4),
             "std": round(std_acc, 4),
             "ci_lower": round(ci_lower, 4),
@@ -211,8 +219,9 @@ def main():
     agg_rows = aggregate_results(main_results)
 
     # Write CSV
-    fieldnames = ["task", "strategy", "compression_rate", "mean_accuracy", "std",
-                   "ci_lower", "ci_upper", "n_seeds", "n_examples", "high_variance"]
+    fieldnames = ["task", "strategy", "compression_rate", "actual_compression",
+                   "mean_accuracy", "std", "ci_lower", "ci_upper", "n_seeds",
+                   "n_examples", "high_variance"]
     with open(AGG_PATH, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -259,14 +268,14 @@ def main():
     print(f"\nSaved statistical tests to {STATS_PATH}")
 
     # Print summary table
-    print(f"\n{'='*80}")
-    print(f"{'Task':<6} {'Strategy':<22} {'Rate':<6} {'Accuracy':<10} {'Std':<8} {'95% CI':<20}")
-    print(f"{'='*80}")
+    print(f"\n{'='*90}")
+    print(f"{'Task':<6} {'Strategy':<22} {'Target':<7} {'Actual':<7} {'Accuracy':<10} {'Std':<8} {'95% CI':<20}")
+    print(f"{'='*90}")
     for r in agg_rows:
         ci = f"[{r['ci_lower']:.3f}, {r['ci_upper']:.3f}]"
         flag = " ⚠" if r["high_variance"] else ""
         print(f"{r['task']:<6} {r['strategy']:<22} {r['compression_rate']:<6.0%} "
-              f"{r['mean_accuracy']:<10.4f} {r['std']:<8.4f} {ci:<20}{flag}")
+              f"{r['actual_compression']:<7.1%} {r['mean_accuracy']:<10.4f} {r['std']:<8.4f} {ci:<20}{flag}")
 
 
 if __name__ == "__main__":

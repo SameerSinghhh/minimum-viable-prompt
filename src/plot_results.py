@@ -51,6 +51,7 @@ def load_agg():
         reader = csv.DictReader(f)
         for row in reader:
             row["compression_rate"] = float(row["compression_rate"])
+            row["actual_compression"] = float(row.get("actual_compression", row["compression_rate"]))
             row["mean_accuracy"] = float(row["mean_accuracy"])
             row["std"] = float(row["std"])
             row["ci_lower"] = float(row["ci_lower"])
@@ -93,15 +94,23 @@ def plot_main_curve(data):
 
         for strategy in STRATEGY_LABELS:
             s_data = [r for r in task_data if r["strategy"] == strategy]
-            s_data.sort(key=lambda r: r["compression_rate"])
+            s_data.sort(key=lambda r: r["actual_compression"])
 
             if not s_data:
                 continue
 
-            rates = [r["compression_rate"] for r in s_data]
-            accs = [r["mean_accuracy"] for r in s_data]
-            ci_lo = [r["ci_lower"] for r in s_data]
-            ci_hi = [r["ci_upper"] for r in s_data]
+            # Deduplicate: multiple target rates can map to same actual rate
+            seen = {}
+            for r in s_data:
+                ac = round(r["actual_compression"], 3)
+                if ac not in seen:
+                    seen[ac] = r
+
+            deduped = sorted(seen.values(), key=lambda r: r["actual_compression"])
+            rates = [r["actual_compression"] for r in deduped]
+            accs = [r["mean_accuracy"] for r in deduped]
+            ci_lo = [r["ci_lower"] for r in deduped]
+            ci_hi = [r["ci_upper"] for r in deduped]
 
             color = STRATEGY_COLORS[strategy]
             label = STRATEGY_LABELS[strategy]
@@ -114,7 +123,7 @@ def plot_main_curve(data):
         ax.axhline(y=baseline, color="gray", linestyle="--", alpha=0.6, label=f"Random ({baseline:.0%})")
 
         ax.set_title(TASK_LABELS[task], fontsize=14, fontweight="bold")
-        ax.set_xlabel("Compression Rate", fontsize=12)
+        ax.set_xlabel("Actual Compression Achieved", fontsize=12)
         ax.set_xlim(-0.02, 0.92)
         ax.set_ylim(0, 1.05)
         ax.xaxis.set_major_formatter(mtick.PercentFormatter(1.0))
@@ -124,7 +133,8 @@ def plot_main_curve(data):
             ax.set_ylabel("Accuracy", fontsize=12)
             ax.legend(loc="lower left", fontsize=10, framealpha=0.9)
 
-    fig.suptitle("Prompt Compression: Accuracy vs. Compression Rate", fontsize=16, fontweight="bold", y=1.02)
+    fig.suptitle("Prompt Compression: Accuracy vs. Actual Compression Achieved",
+                 fontsize=16, fontweight="bold", y=1.02)
     plt.tight_layout()
     path = os.path.join(FIGURES_DIR, "main_curve.png")
     fig.savefig(path, dpi=150, bbox_inches="tight")
@@ -205,7 +215,8 @@ def plot_strategy_comparison(data):
             match = [r for r in task_data if r["strategy"] == strategy]
             if match:
                 r = match[0]
-                strategies.append(STRATEGY_LABELS[strategy])
+                actual = r.get("actual_compression", 0.5)
+                strategies.append(f"{STRATEGY_LABELS[strategy]}\n({actual:.0%} actual)")
                 accs.append(r["mean_accuracy"])
                 stds.append(r["std"])
                 colors.append(STRATEGY_COLORS[strategy])
@@ -229,7 +240,8 @@ def plot_strategy_comparison(data):
         ax.set_ylabel("Accuracy" if idx == 0 else "")
         plt.setp(ax.xaxis.get_majorticklabels(), rotation=15, ha="right")
 
-    fig.suptitle("Strategy Comparison at 50% Compression", fontsize=16, fontweight="bold", y=1.02)
+    fig.suptitle("Strategy Comparison at 50% Target Compression (Actual Rates Vary)",
+                 fontsize=15, fontweight="bold", y=1.02)
     plt.tight_layout()
     path = os.path.join(FIGURES_DIR, "strategy_comparison.png")
     fig.savefig(path, dpi=150, bbox_inches="tight")
@@ -309,13 +321,21 @@ def plot_variance(data):
 
         for strategy in STRATEGY_LABELS:
             s_data = [r for r in task_data if r["strategy"] == strategy]
-            s_data.sort(key=lambda r: r["compression_rate"])
+            s_data.sort(key=lambda r: r["actual_compression"])
 
             if not s_data:
                 continue
 
-            rates = [r["compression_rate"] for r in s_data]
-            stds = [r["std"] for r in s_data]
+            # Deduplicate by actual compression
+            seen = {}
+            for r in s_data:
+                ac = round(r["actual_compression"], 3)
+                if ac not in seen:
+                    seen[ac] = r
+            deduped = sorted(seen.values(), key=lambda r: r["actual_compression"])
+
+            rates = [r["actual_compression"] for r in deduped]
+            stds = [r["std"] for r in deduped]
 
             color = STRATEGY_COLORS[strategy]
             label = STRATEGY_LABELS[strategy]
@@ -325,7 +345,7 @@ def plot_variance(data):
         ax.axhline(y=0.05, color="red", linestyle="--", alpha=0.5, label="High variance (5%)")
 
         ax.set_title(TASK_LABELS[task], fontsize=14, fontweight="bold")
-        ax.set_xlabel("Compression Rate", fontsize=12)
+        ax.set_xlabel("Actual Compression Achieved", fontsize=12)
         ax.set_xlim(-0.02, 0.92)
         ax.xaxis.set_major_formatter(mtick.PercentFormatter(1.0))
         ax.yaxis.set_major_formatter(mtick.PercentFormatter(1.0))

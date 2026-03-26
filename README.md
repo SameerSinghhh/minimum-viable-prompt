@@ -8,9 +8,9 @@ This project quantitatively measures where and how model performance degrades as
 
 ## TL;DR: The 5 Surprising Findings
 
-### 1. LLM-Guided Compression Is Basically Lossless
+### 1. LLM-Guided Compression Is Lossless -- But It Barely Compresses
 
-We asked Claude to rewrite prompts shorter at every compression level up to 90%. The result? Accuracy barely moved. On our label classification task, it went from 99.0% to 98.0%. On our logic rules task, 84.5% to 84.0%. Even when we told it to cut the prompt by *ninety percent*, the model's intelligent compression preserved virtually all task-relevant information. This means **you can use one cheap LLM call to compress a prompt and save 50%+ tokens on every subsequent call** with nearly zero quality loss.
+We asked Claude to rewrite prompts shorter at every compression level up to 90%. Accuracy barely moved: 99.0% to 98.0% on ALC, 84.5% to 84.0% on SLR. Sounds amazing -- until you look at the *actual* compression achieved. When asked to compress by 90%, the model only actually removed ~25% of words (ALC) or ~38% (SLR). **It preserved accuracy by quietly refusing to compress aggressively.** The model knows which words matter and won't cut them, which is valuable -- but the savings top out at ~25-38%, not 90%. Still, this means **one LLM call can safely find and remove the ~25-30% of your prompt that is genuinely redundant.**
 
 ### 2. Stopwords Are Dead Weight -- Removing Them Is Completely Free
 
@@ -30,7 +30,7 @@ Our logic rules task (SLR) hit its performance cliff 10-20 percentage points ear
 
 ### The Bottom Line
 
-> You can save 30% of tokens for free with a stopword regex. You can save 50%+ with one extra LLM call. And the part of the prompt that matters most isn't the examples -- it's the definitions and rules.
+> You can save ~25-30% of tokens for free -- either with a stopword regex or one LLM call. Beyond that, compression starts destroying task-relevant information, especially for logic/rule-following tasks. And the part of the prompt that matters most isn't the examples -- it's the definitions and rules.
 
 That's actionable, counterintuitive, and backed by 70,000 data points with statistical significance tests.
 
@@ -40,7 +40,7 @@ That's actionable, counterintuitive, and backed by 70,000 data points with stati
 
 | Finding | Detail |
 |---------|--------|
-| **LLM-guided compression loses almost nothing** | 98% accuracy at 90% target compression on both tasks |
+| **LLM-guided compression loses almost nothing** | 98% accuracy, but only actually compresses ~25-38% |
 | **Stopword removal is free** | Removing all stopwords (~30% of words) causes <1% accuracy drop |
 | **Random dropout is catastrophic** | Performance drops below random chance at 80-90% compression |
 | **The cliff is sharp, not gradual** | Random dropout: fine at 20%, broken at 40% (ALC) |
@@ -75,33 +75,34 @@ That's actionable, counterintuitive, and backed by 70,000 data points with stati
 
 ## Results
 
-### Figure 1: The Hero Chart -- Accuracy vs. Compression Rate
+### Figure 1: The Hero Chart -- Accuracy vs. Actual Compression
 
 ![Main Curve](figures/main_curve.png)
 
-**What this shows:** Each line is a compression strategy. As you move right (more compression), accuracy drops -- but *how fast* depends entirely on the strategy.
+**What this shows:** Each line is a compression strategy, plotted against the *actual* percentage of words removed (not the target rate we requested). This is a critical distinction -- some strategies can't or won't compress as aggressively as asked.
 
 Key observations:
-- **LLM-Guided (purple)** and **Stopword Removal (blue)** are nearly flat lines. They maintain 98%+ accuracy on ALC and 84%+ on SLR across *all* compression levels.
-- **Random Dropout (red)** degrades sharply after 20-30%. By 90% compression, ALC accuracy is 7.7% (below random chance of 33%), and SLR is 8.7% (below random chance of 25%).
-- **Entity-Preserving (green)** sits between -- better than random, but eventually collapses at 70-80%.
+- **LLM-Guided (purple)** tops out at ~25% actual compression on ALC and ~38% on SLR. It maintains near-perfect accuracy because it simply refuses to cut important words. The line is short because it never reaches high compression.
+- **Stopword Removal (blue)** similarly caps at ~25-32% actual compression (there aren't more stopwords to remove). Near-perfect accuracy within that range.
+- **Random Dropout (red)** is the only strategy that actually reaches 80%+ compression. Performance degrades steadily and falls below random chance by ~82%.
+- **Entity-Preserving (green)** reaches ~64% actual compression before capping out (protected words can't be removed). Performance collapses well before that cap.
 
-**Why stopword removal stays flat:** Stopwords make up ~30% of the prompt. Requesting 50%, 60%, or 90% compression with stopword-only removal all achieve the same ~30% actual compression, because there simply aren't more stopwords to remove. This acts as a natural safety valve.
+**The honest comparison:** At the same actual compression level (~25%), all four strategies perform about equally well. The divergence only appears when random dropout and entity-preserving push beyond 30% -- territory that stopword removal and LLM-guided never reach.
 
-### Figure 2: Strategy Comparison at 50% Compression
+### Figure 2: Strategy Comparison at 50% Target Compression
 
 ![Strategy Comparison](figures/strategy_comparison.png)
 
-At 50% compression, the four strategies produce dramatically different outcomes:
+When asked for 50% compression, each strategy achieves very different *actual* compression (shown in parentheses). This makes the comparison uneven but reveals how each strategy behaves when pushed:
 
-| Strategy | ALC Accuracy | SLR Accuracy |
-|----------|-------------|-------------|
-| Random Dropout | 65.7% | 44.2% |
-| Stopword Removal | 98.0% | 84.0% |
-| Entity-Preserving | 72.7% | 59.8% |
-| LLM-Guided | 98.5% | 84.0% |
+| Strategy | Actual Compression | ALC Accuracy | SLR Accuracy |
+|----------|-------------------|-------------|-------------|
+| Random Dropout | 44% / 46% | 65.7% | 44.2% |
+| Stopword Removal | 25% / 32% | 98.0% | 84.0% |
+| Entity-Preserving | 45% / 47% | 72.7% | 59.8% |
+| LLM-Guided | 15% / 21% | 98.5% | 84.0% |
 
-Stopword removal and LLM-guided compression are statistically tied. Both are significantly better than random dropout and entity-preserving (p < 0.05).
+LLM-guided looks best, but it only compressed 15-21%. At comparable actual compression (~25-32%), stopword removal matches it. The real story: **~25-30% is the safe compression ceiling**, and any strategy that stays within it preserves performance.
 
 ### Figure 3: Section Ablation -- What Part of the Prompt Matters Most?
 
@@ -153,7 +154,7 @@ Key significant findings:
 | # | Hypothesis | Verdict |
 |---|-----------|---------|
 | 1 | Entity-preserving dropout will outperform random dropout | **Partially confirmed.** Better on average but the difference was not always statistically significant. High variance on both. |
-| 2 | LLM-guided compression will outperform all random strategies | **Confirmed.** LLM-guided maintained near-baseline accuracy at every compression level, dramatically outperforming random strategies. |
+| 2 | LLM-guided compression will outperform all random strategies | **Partially confirmed, with caveat.** LLM-guided maintained near-baseline accuracy, but it achieved this by only actually compressing ~25-38%. It outperforms at the same *target* rate, but not because it compresses better -- it compresses *less*. |
 | 3 | Compressing examples hurts more than compressing instructions | **Rejected.** The opposite is true! Instructions matter more. Compressing examples alone had zero impact; compressing instructions alone caused a 2-5% drop. |
 | 4 | The cliff will be sharper for SLR than ALC | **Confirmed.** SLR cliff points occur 10-20 percentage points earlier than ALC across all strategies. Logic rules are more brittle. |
 | 5 | Stopword removal will be nearly free | **Strongly confirmed.** Removing all stopwords (~30% of words) caused <1% accuracy drop on both tasks. The strongest finding in the study. |
@@ -162,15 +163,17 @@ Key significant findings:
 
 ## Practical Takeaways
 
-1. **You can remove all stopwords for free.** If you need to shorten prompts, start by stripping stopwords. You'll save ~30% of tokens with essentially zero quality loss.
+1. **~25-30% is the safe compression ceiling.** All strategies that stay within this range preserve accuracy. Beyond it, performance degrades regardless of strategy.
 
-2. **LLM-guided compression is the gold standard** but requires an extra API call. It preserved near-perfect accuracy at every compression level tested.
+2. **Stopword removal is the best bang-for-buck.** A simple regex gets you ~25-30% compression with <1% accuracy loss. No API call needed.
 
-3. **Instructions matter more than examples.** If you must cut something from your prompt, cut examples before instructions. The label/rule definitions are the critical payload.
+3. **LLM-guided compression is equivalent to stopword removal in practice.** It achieves the same ~25-30% actual compression and the same accuracy. It's smarter about *which* words to cut, but doesn't compress any further. Use it if you want a cleaner compressed prompt; use stopword removal if you want zero cost.
 
-4. **Random word dropout is never a good idea.** Even at 30% compression, random dropout introduces high variance and unpredictable failures.
+4. **Instructions matter more than examples.** If you must cut something from your prompt, cut examples before instructions. The label/rule definitions are the critical payload.
 
-5. **Logic/rule-following tasks are more fragile** than classification tasks. Budget more prompt headroom for complex rule-based instructions.
+5. **Random word dropout is never a good idea.** Even at 30% compression, random dropout introduces high variance and unpredictable failures.
+
+6. **Logic/rule-following tasks are more fragile** than classification tasks. Budget more prompt headroom for complex rule-based instructions.
 
 ---
 
