@@ -160,7 +160,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.986,
-      "mean_2": 0.98,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -182,7 +182,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.983,
-      "mean_2": 0.98,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -193,7 +193,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.995,
-      "mean_2": 0.98,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -226,7 +226,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.905,
-      "mean_2": 0.985,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -248,7 +248,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.981,
-      "mean_2": 0.985,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -259,7 +259,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.982,
-      "mean_2": 0.985,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -292,7 +292,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.746,
-      "mean_2": 0.985,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -314,7 +314,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.98,
-      "mean_2": 0.985,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -325,7 +325,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.931,
-      "mean_2": 0.985,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -358,7 +358,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.657,
-      "mean_2": 0.985,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -380,7 +380,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.98,
-      "mean_2": 0.985,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -391,7 +391,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.727,
-      "mean_2": 0.985,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -490,7 +490,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.441,
-      "mean_2": 0.98,
+      "mean_2": 0.96,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -512,7 +512,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.98,
-      "mean_2": 0.98,
+      "mean_2": 0.96,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -523,7 +523,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.467,
-      "mean_2": 0.98,
+      "mean_2": 0.96,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -556,7 +556,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.206,
-      "mean_2": 0.98,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -578,7 +578,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.98,
-      "mean_2": 0.98,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -589,7 +589,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.37,
-      "mean_2": 0.98,
+      "mean_2": 0.995,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -622,7 +622,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.077,
-      "mean_2": 0.98,
+      "mean_2": 0.89,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -644,7 +644,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.98,
-      "mean_2": 0.98,
+      "mean_2": 0.89,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -655,7 +655,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.37,
-      "mean_2": 0.98,
+      "mean_2": 0.89,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -820,7 +820,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.804,
-      "mean_2": 0.845,
+      "mean_2": 0.84,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -842,7 +842,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.841,
-      "mean_2": 0.845,
+      "mean_2": 0.84,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -853,7 +853,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.661,
-      "mean_2": 0.845,
+      "mean_2": 0.84,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -1084,7 +1084,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.427,
-      "mean_2": 0.845,
+      "mean_2": 0.84,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -1106,7 +1106,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.84,
-      "mean_2": 0.845,
+      "mean_2": 0.84,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -1117,7 +1117,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.441,
-      "mean_2": 0.845,
+      "mean_2": 0.84,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -1216,7 +1216,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.255,
-      "mean_2": 0.84,
+      "mean_2": 0.835,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -1238,7 +1238,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.84,
-      "mean_2": 0.84,
+      "mean_2": 0.835,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -1249,7 +1249,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.33,
-      "mean_2": 0.84,
+      "mean_2": 0.835,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -1282,7 +1282,7 @@
       "strategy_1": "random_dropout",
       "strategy_2": "llm_guided",
       "mean_1": 0.087,
-      "mean_2": 0.84,
+      "mean_2": 0.77,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -1304,7 +1304,7 @@
       "strategy_1": "stopword_removal",
       "strategy_2": "llm_guided",
       "mean_1": 0.84,
-      "mean_2": 0.84,
+      "mean_2": 0.77,
       "t_statistic": null,
       "p_value": null,
       "significant": null
@@ -1315,7 +1315,7 @@
       "strategy_1": "entity_preserving",
       "strategy_2": "llm_guided",
       "mean_1": 0.33,
-      "mean_2": 0.84,
+      "mean_2": 0.77,
       "t_statistic": null,
       "p_value": null,
       "significant": null

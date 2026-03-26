@@ -132,10 +132,10 @@ def llm_compress(prompt: str, target_rate: float, model: str = "claude-sonnet-4-
         model=model,
         max_tokens=4096,
         temperature=0,
-        system="You are a prompt compressor. Rewrite the given prompt to be shorter while preserving ALL information needed to complete the task correctly. Do not change labels, rules, examples, or their mappings. Only remove redundant/filler words and shorten phrasing. Return ONLY the compressed prompt, nothing else.",
+        system="You are a prompt compressor. Rewrite the given prompt to be EXACTLY the target word count. You MUST hit the target — if that means losing some examples, removing explanations, or abbreviating heavily, do it. Preserve the core task labels/rules and at least one example, but aggressively cut everything else. Use abbreviations, remove articles, merge sentences. Return ONLY the compressed prompt, nothing else.",
         messages=[{
             "role": "user",
-            "content": f"Compress this prompt to approximately {target_words} words (currently {word_count} words). Remove filler but keep all labels, rules, and examples intact:\n\n{prompt}"
+            "content": f"Compress this prompt to EXACTLY {target_words} words (currently {word_count} words). You MUST reach the target even if it means losing detail:\n\n{prompt}"
         }],
     )
 
